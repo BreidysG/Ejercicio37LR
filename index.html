@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fijación sobre Textos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>FIJACIÓN SOBRE TEXTOS</h1>
+        <div id="info">
+            <p>Este ejercicio está formado por un texto presentado en dos columnas estilo periodístico y atravesados por líneas verticales. Debes centrar la mirada en las líneas verticales de cada columna mientras la deslizas hacia abajo como lo va indicando la placa visualizadora.</p>
+            <p>Las líneas verticales te indican las fijaciones que debes hacer para cada línea de texto.</p>
+            <p>Lo ideal es que disminuyas el número de fijaciones que realiza el ojo al leer y puedas percibir por cada línea de texto, y con un solo golpe de vista, tres o más palabras.</p>
+            <p>Este ejercicio te servirá para ampliar tu ángulo lector y así captar más palabras con una sola fijación.</p>
+            <p>Es bueno que trabajes comprensión lectora, por lo tanto intenta comprender sin realizar vocalización o subvocalización.</p>
+        </div>
+        <div id="controles" class="controls">
+            <label for="speed">Selecciona la velocidad (milisegundos por fijación):</label>
+            <input type="number" id="speed" value="300">
+            <button id="start-btn">Iniciar</button>
+        </div>
+        <div id="text-container" class="hidden">
+            <div id="column-left" class="column left-column hidden">
+                <p>En el bosque profundo, donde los árboles susurran secretos al viento,</p>
+                <p>vivía una joven con un corazón lleno de sueños y una mente curiosa.</p>
+                <p>Pasaba los días explorando senderos ocultos,</p>
+                <p>siguiendo el rastro de criaturas mágicas y recolectando flores desconocidas.</p>
+                <p>Sus ojos brillaban con la luz del sol que se filtraba entre las hojas,</p>
+                <p>y sus manos, aunque pequeñas, eran ágiles y fuertes.</p>
+                <p>Una cesta siempre colgaba de su brazo,</p>
+                <p>llena de frutas silvestres, piedras relucientes y pergaminos viejos.</p>
+                <p>El aire en el bosque era fresco, cargado de promesas de aventuras,</p>
+                <p>y cada paso que daba la acercaba a los misterios que tanto anhelaba descubrir.</p>
+                <p>Con cada día que pasaba, su espíritu se fortalecía,</p>
+                <p>y su conexión con la naturaleza se hacía más profunda.</p>
+                <p>No temía a la oscuridad, pues sabía que los secretos más grandes se encontraban allí.</p>
+                <p>Era una niña del bosque, libre y valiente, guiada por el murmullo de las hojas y el latido de la tierra.</p>
+            </div>
+            <div id="column-right" class="column right-column hidden">
+                <p>A medida que pasaban los años, la joven creció en sabiduría y gracia.</p>
+                <p>Sus pies ligeros la llevaron más allá de los límites del bosque,</p>
+                <p>hacia tierras desconocidas donde las montañas tocaban el cielo.</p>
+                <p>Allí encontró a otros viajeros, almas errantes con historias que contar,</p>
+                <p>y juntos compartieron noches bajo las estrellas, rodeados del crepitar del fuego.</p>
+                <p>Sus aventuras no eran siempre fáciles, pero su espíritu nunca flaqueó.</p>
+                <p>Aprendió de los vientos, que la guiaban hacia los senderos menos recorridos,</p>
+                <p>y de los ríos, que le enseñaron a fluir sin resistirse a los cambios del destino.</p>
+                <p>Su nombre se convirtió en leyenda entre los pueblos que conoció,</p>
+                <p>una historia de valentía y bondad, de una joven que jamás temió a lo desconocido.</p>
+                <p>Y aunque sus días de aventuras parecían no tener fin,</p>
+                <p>siempre encontraba el camino de regreso al bosque que la vio crecer,</p>
+                <p>porque sabía que allí, entre las sombras y la luz, su verdadero hogar la esperaba.</p>
+            </div>
+            
+            <!-- Dos líneas verticales en cada columna -->
+            <div id="line1" class="vertical-line left-line1 hidden"></div>
+            <div id="line2" class="vertical-line left-line2 hidden"></div>
+            <div id="line3" class="vertical-line right-line1 hidden" ></div>
+            <div id="line4" class="vertical-line right-line2 hidden"></div>
+        </div>
+        <div id="timer" class="hidden">Tiempo: 3:00</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
